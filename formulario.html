@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section>
+        <header>
+            <h1>Envíanos un mensaje</h1>
+        </header>
+
+        <form action="/enviar" method="POST" autocomplete="on">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+                </div>
+
+                <div>
+                    <label for="fecha">Fecha de contacto:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+            </fieldset>
+
+            <footer>
+                <button type="submit">Enviar mensaje</button>
+            </footer>
+        </form>
+    </section>
+
+</body>
+</html>
